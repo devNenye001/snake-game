@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/images/game-favicon.jpg" type="image/x-icon">
+    <title>Snake Game</title>
+</head>
+<body>
+
+    <!-- Game home page -->
+    <section id="grid-box">
+        <h1 class="gameName">Snake</h1>
+        <img src="/images/home 2.png" alt="THE SNAKE GAME PICTURE PREVIEW">
+        <h1 id="start" onclick="start()">Start</h1>
+    </section>
+
+    <!-- loading page -->
+     <section id="loading-section">
+        <h1>Now loading...</h1>
+        <div class="loader-container" id="loading">
+        <div class="loader-bar">
+            <div class="loader-fill"></div>
+        </div>
+        <p id="result"></p>
+   </div>
+    </section>
+
+    <!-- The game page -->
+     <canvas id="gameBlock" width="400" height="400"></canvas>
+
+     <!-- the result page -->
+      <section id="gameOver">
+        <h1>Game Over</h1>
+        <h2>Play Again?</h2>
+        <button id="yesBtn">yes</button>
+        <button id="noBtn">No</button>
+      </section>
+
+      <script src="/script.js"></script>
+</body>
+</html>

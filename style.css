@@ -1,0 +1,144 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: #141414;
+    height: 100vh;
+    font-family: 'Press Start 2P', cursive;
+    padding: 20px 50px;
+    overflow: hidden;
+}
+
+section{
+    height: auto;
+    width: auto;
+    border: 10px dashed white;
+}
+
+/* displays */
+
+/* #grid-box{
+    display: none;
+} */
+
+#gameOver{
+    display: none;
+}
+
+#gameBlock{
+    display: none;
+}
+
+#loading-section{
+    display: none;
+}
+
+
+/* homepage styling */
+
+#grid-box, #loading-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.gameName{
+    font-size: 60px;
+    color: white;
+}
+
+#start{
+    font-size: 50px;
+    color: #72d780;
+    text-shadow: 3px 3px 20px #76af7d;
+}
+
+/* loading page */
+
+#loading-section{
+    height: 100%;
+    border: none;
+}
+#result{
+    text-align: center;
+    font-size: 19.2px;
+    line-height: 1.5;
+    color: white;
+}
+.loader-bar {
+  width: 600px;
+  height: 40px;
+  margin: 40px 0px;
+  border: 3px solid white;
+  background-color:#141414;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.loader-fill {
+  width: 0;
+  height: 100%;
+  background-color: #ffffff;
+  animation: fillBar 10s linear forwards;
+}
+
+@keyframes fillBar {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+#loading-section h1{
+    color: white;
+    font-size: 30px;
+}
+
+/* game over styling */
+#gameOver{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+#gameOver{
+    border: none;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+#gameOver h1{
+    font-size: 68.8px;
+    color: #f37c84;
+    margin-bottom: 30px;
+    text-shadow: 3px 3px 10px #fa4150;
+}
+
+#gameOver h2{
+    margin-bottom: 30px;
+    font-size: 45.4px;
+    margin-bottom: 60px;
+}
+
+#gameOver button{
+    background-color: transparent;
+    font-size: 45.4px;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    border: none ;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+/* the main game styling */
+
+#gameBlock {
+  width: 90vw;
+  height: 90vh;
+}
+
